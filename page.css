@@ -127,6 +127,8 @@ a:hover{
   font-weight: bolder;
   text-align: center;
   font-size: 1.5em;
+  font-variant: all-small-caps;
+  width: 80%;
 }
 
 .texto3{
@@ -294,6 +296,9 @@ footer img:hover{
   }
   .frase-logo{
     width: 65vw;
+  }
+  .texto1, .texto3{
+    font-size: 1.5em;
   }
 
   .menu-oculto{
