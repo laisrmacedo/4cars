@@ -145,6 +145,7 @@ a:hover{
   margin: 0 auto;
   display: flex;
   padding: 8% 80px 0 80px;
+  max-height: 670px;
 }
 
 .box-texto > h2{
@@ -273,11 +274,15 @@ footer img:hover{
   }
 
   .box-opcoes{
-    height: 90%;
+    height: 100%;
+  }
+
+  .carro-exclusivo, .carro-popular{
+    gap: 10px;
   }
 }
 
-@media screen and (max-width: 768px) and (min-width: 425px){
+@media screen and (max-width: 768px){
   nav{
     justify-content: space-between;
   }
@@ -303,7 +308,7 @@ footer img:hover{
 
   
   #aluguel, #compra{
-    height: 100vh;
+    /* height: 100vh; */
     flex-direction: column;
   }
   
@@ -321,6 +326,7 @@ footer img:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
+    min-height: 250px
     /* flex-wrap: wrap; */
   }
 
@@ -330,6 +336,7 @@ footer img:hover{
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
+    /* max-height: 280px; */
   }
 
   .carro-popular, .carro-exclusivo{
@@ -346,8 +353,15 @@ footer img:hover{
   body{
     width: 100vw;
   }
+
+  .logo img{
+    width: 90px;
+  }
+
   .frase-logo{
     font-size: 80%;
+    text-align: end;
+    padding: 10px;
   }
 
   #propaganda{
@@ -356,10 +370,11 @@ footer img:hover{
 
   #aluguel, #compra{
     height: 130vh;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     flex-direction: column;
     gap: 40px;
     padding: 20px 40px;
+    min-height: 1000px
   }
 
   .box-texto{
@@ -374,7 +389,7 @@ footer img:hover{
   }
 
   .box-texto li{
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .box-opcoes{
